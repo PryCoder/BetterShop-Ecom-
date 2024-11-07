@@ -57,7 +57,7 @@ app.get('/api/user/:userId', async (req, res) => {
   
 
 // Serve static files from the dist directory
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, '/client/dist')));
 
 // Handle React routing, return all requests to React app
 app.get('*', (req, res) => {
